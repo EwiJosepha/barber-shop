@@ -2,9 +2,10 @@
     margin: 0;
     padding: 0;
     font-family: 'Poppins', sans-serif;
+    background-color:red ;
 }
 #banner{
-    background: linear-gradient( rgba(0,0,0,0.5),#009688),url(images/banner.jpg);
+    background: blue;
     background-size: cover;
     background-position: center;
     height: 100vh;
@@ -128,9 +129,30 @@ font-size: 44px;}
     z-index: 1;
     display: inline-block;
 }
-.title-text p:c
-.text-align h1{
+.title-text p::after{
+    content: '';
+    width: 50px;
+    height: 35px;
+    background: linear-gradient(#019587,#fff);
+    position: absolute;
+    top: -20px;
+    left: 0;
+    z-index: -1; 
+    transform: rotate(10deg);
+    border-top-left-radius: 35px;
+    border-bottom-left-radius: 35px;
+}
+.title-text h1{
     font-size: 50px;
+}
+.feature-box{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: center;
+
 }
 
  
